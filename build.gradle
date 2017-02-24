@@ -12,7 +12,7 @@ allprojects {
 
     version = '1.0'
     ext {
-        appName = "learnopen-videoseries"
+        appName = "learnopengl-videoseries"
         lwjglVersion = "3.1.1"
     }
 
