@@ -1,0 +1,31 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        jcenter()
+    }
+}
+
+allprojects {
+    apply plugin: "idea"
+
+    version = '1.0'
+    ext {
+        appName = "learnopen-videoseries"
+        lwjglVersion = "3.1.1"
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+    }
+}
+
+
+project(":core") {
+    apply plugin: "java"
+
+}
